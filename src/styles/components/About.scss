@@ -1,0 +1,50 @@
+.about-page {
+  @include flex(row, center, space-evenly);
+  margin: 3em auto 0 auto;
+  width: 90vw;
+  height: 70vh;
+}
+
+.img-section {
+  @include flex(row, flex-start, center);
+  min-width: 30%;
+  height: 100%;
+}
+
+.profile-img-container{
+  background-image: url('src/styles/images/profile_img.jpg');
+  height: 15em;
+  width: 15em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-info-container {
+  @include flex(column, flex-start, space-between);
+  height: 100%;
+  width: 60%;
+}
+
+.skills-badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.skills-badge {
+  margin: 5px 20px 5px 0;
+  padding: 12px 25px;
+  background-color: ($darkGreen) !important;
+}
+
+.social-links-container {
+  @include flex(row, flex-start, space-between);
+  width: 60%;
+  color: ($lightGreen);
+}
+
+.social-img {
+  color: ($lightGreen);
+}
