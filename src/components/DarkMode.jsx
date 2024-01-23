@@ -2,12 +2,6 @@ import { useState } from 'react';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 
-
-// https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
-// https://www.geeksforgeeks.org/how-to-pass-data-from-child-component-to-its-parent-in-reactjs/
-// ! TRY:
-// https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
-
 export default function DarkMode() {
   const [radioValue, setRadioValue] = useState('2')
   const radios = [
@@ -24,10 +18,10 @@ export default function DarkMode() {
   if (radioValue == 1) {
     // document.body.classList.add('light-mode') 
     document.documentElement.setAttribute('data-theme', 'light')
-   } else if (radioValue == 2) {
+    } else if (radioValue == 2) {
     // document.body.classList.remove('light-mode') 
     document.documentElement.setAttribute('data-theme', 'dark')
-   } 
+    } 
   
   return (
     <ButtonGroup>

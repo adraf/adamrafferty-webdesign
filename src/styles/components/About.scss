@@ -58,7 +58,7 @@
 .social-links-container {
   @include flex(row, flex-start, space-between);
   width: 60%;
-  max-width: 350px;
+  max-width: 250px;
   margin: 1em 0;
 }
 
