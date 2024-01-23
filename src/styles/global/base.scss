@@ -6,9 +6,38 @@ html {
   font-size: 16px;
 }
 
+$black: #232931;
+$darkGreen: #8bbabb;
+$lightGreen: #C7F0DB;
+$white: #EEEEEE;
+
+:root {
+  // standard dark mode
+  --black-to-white: #232931;
+  --white-to-black: #EEEEEE;
+  --green-to-black: #8bbabb;
+  --light-green-to-dark: #C7F0DB;
+  // Change color with rgba
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(139, 186, 187)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
+// light mode
+[data-theme="light"] {
+  --black-to-white: #EEEEEE;
+  --white-to-black: #232931;
+  --green-to-black: #232931;
+  --light-green-to-dark: #8bbabb;
+  // Change color with rgba
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(35, 41, 49)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: 'DM Sans', sans-serif; 
-  background-color: ($black);
-  color: ($white);
+  background-color: var(--black-to-white);
+  color: var(--white-to-black);
 }

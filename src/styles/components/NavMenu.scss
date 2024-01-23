@@ -7,7 +7,7 @@
 // Nav Bar Brand Link
 .nav-btn-brand {
   text-decoration: none;
-  color: ($darkGreen);
+  color: var(--green-to-black);
   @media (max-width:767px) {
   
   }
@@ -15,16 +15,12 @@
 // Nav Bar Links
 .nav-btn-links {
   text-decoration: none;
-  color: ($darkGreen);
+  color: var(--green-to-black);
   @media (max-width:767px) {
     color: ($black);
   }
 }
 // Burger Icon
-// Change color with rgba
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(139, 186, 187)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
 .navbar-toggler {
   border: none;
 }
@@ -34,12 +30,6 @@
     padding: 18px 0;
     margin-top: 10px;
     background-color: ($darkGreen);
-  }
-}
-// Dropdown Nav Text
-#dropdown-nav .nav-link {
-  @media (max-width:767px) {
-    color: ($white);
   }
 }
 // General button styling
@@ -75,6 +65,5 @@
     color: ($white);
   }
 }
-
 
 

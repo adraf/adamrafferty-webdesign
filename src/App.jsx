@@ -2,7 +2,6 @@ import { Outlet } from 'react-router-dom'
 import NavMenu from './components/Nav.jsx'
 
 function App() {
-
   return (
     <>
       <NavMenu />
