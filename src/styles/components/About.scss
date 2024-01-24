@@ -12,7 +12,7 @@
 
 .img-section {
   @include flex(row, flex-start, center);
-  min-width: 30%;
+  min-width: 25%;
   height: 100%;
   @media (max-width:767px) {
     margin: 0 0 2em 0;
@@ -59,7 +59,7 @@
   @include flex(row, flex-start, space-between);
   width: 60%;
   max-width: 250px;
-  margin: 1em 0;
+  margin: 1em 0 2em 0;
 }
 
 .social-img {

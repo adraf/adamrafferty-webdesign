@@ -14,6 +14,7 @@ $white: #EEEEEE;
 :root {
   // standard dark mode
   --black-to-white: #232931;
+  --black-to-white-opacity: rgb(35, 41, 49, 0.5);
   --white-to-black: #EEEEEE;
   --green-to-black: #8bbabb;
   --light-green-to-dark: #C7F0DB;
@@ -26,6 +27,7 @@ $white: #EEEEEE;
 // light mode
 [data-theme="light"] {
   --black-to-white: #EEEEEE;
+  --black-to-white-opacity: rgb(238, 238, 238, 0.5);
   --white-to-black: #232931;
   --green-to-black: #232931;
   --light-green-to-dark: #8bbabb;
@@ -40,4 +42,17 @@ body {
   font-family: 'DM Sans', sans-serif; 
   background-color: var(--black-to-white);
   color: var(--white-to-black);
+}
+
+a, .social-img {
+  transition: 0.2s ease-in-out;
+}
+
+a:hover {
+  color: $lightGreen;
+  transform: scale(1.05);
+}
+
+.social-img:hover {
+  color: $darkGreen;
 }

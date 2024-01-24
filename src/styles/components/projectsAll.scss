@@ -3,3 +3,59 @@
   height: 100%;
   width: 100%;
 }
+
+.carousel-inner {
+  height: 80vh;
+}
+
+.project-container-carousel {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 800px;
+}
+
+.carousel-information {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 40%;
+  background-color: var(--black-to-white-opacity);
+  backdrop-filter: blur(5px);
+}
+
+.carousel-caption {
+  height: 100%;
+  bottom: 0;
+  right: 8%;
+  left: 8%;
+  width: 70%;
+  @media (max-width:767px) {
+    width: 80%;
+  }
+}
+
+.carousel-caption h2 {
+  color: var(--white-to-black);
+}
+
+.carousel-caption .skills-badge {
+  padding: 10px 15px;
+  color: $black;
+  @media (max-width:767px) {
+    padding: 10px 18px;
+    font-size: 10px;
+  }
+}
+
+.carousel-indicators {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+// change arrows for dark mode
+// .carousel-control-next, .carousel-control-next-icon, .carousel-control-prev, .carousel-control-prev-icon {
+//   background-color: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill=" + var(--white-to-black) + "%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+// }
+
+// max-width for background image

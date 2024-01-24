@@ -14,14 +14,14 @@ export default function NavMenu() {
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='ms-auto' id='dropdown-nav'>
           <Container fluid='md'>
-            <Row className='text-center'>
+            <Row className='text-center align-items-center'>
               <Col>
                 {/* Dark Mode Toggle Button */}
                 <DarkMode />
               </Col>
-              <Col><Nav.Link><Link className='nav-btn-links' to='/project'>Projects</Link></Nav.Link></Col>
-              {/* <Col><Nav.Link><Link className='nav-btn-links' to='/'>Work</Link></Nav.Link></Col> */}
-              <Col><Nav.Link><Link className='nav-btn-links' to='/about'>About</Link></Nav.Link></Col>
+              <Col><Nav><Link className='nav-btn-links' to='/project'>Projects</Link></Nav></Col>
+              {/* <Col><Nav><Link className='nav-btn-links' to='/'>Work</Link></Nav></Col> */}
+              <Col><Nav><Link className='nav-btn-links' to='/about'>About</Link></Nav></Col>
             </Row>
           </Container>
         </Nav>

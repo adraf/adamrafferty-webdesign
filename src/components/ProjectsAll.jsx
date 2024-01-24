@@ -1,48 +1,47 @@
-import { projectsArray } from "../utils/loaders/projects"
-import { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+import { Link, useOutletContext } from 'react-router-dom'
+import { projectsArray } from '../utils/loaders/projects'
 
+import Carousel from 'react-bootstrap/Carousel'
+import { Badge } from 'react-bootstrap'
 
 export default function ProjectsAll() {
 
-  const [index, setIndex] = useState(0);
+  const [getProject, setGetProject] = useOutletContext([])
 
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);  
+  async function getIndProject(id) {
+    projectsArray.forEach(project => {
+      if (id === project.id) {
+        // console.log("this project", project)
+        setGetProject(project)
+        return getProject
+      }
+    })
   }
 
   return (
-    <section className="main-projects">
-      {projectsArray.map(project => {
-        const { id, title, description } = project
-        return (
-          <section key={id}>
-            <h2>{title}</h2>
-            <p>{description}</p>
-          </section>
-        )
-      })}
-      <Carousel activeIndex={index} onSelect={handleSelect} >
-        <Carousel.Item>
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+    <section className='main-projects'>
+      <Carousel className='d-flex'>
+        {projectsArray.map(project => {
+          const { id:projectId, title, languages, projectImages } = project
+          return (
+            <Carousel.Item key={projectId} className='w-100 h-100 p-3 project-container-carousel' style={{ backgroundImage: `url(${projectImages[0]})` }}>
+              <Link to={`/project/${projectId}/`} onClick={() => getIndProject(projectId)}>
+                <div className='carousel-information'>
+                  <Carousel.Caption className='d-flex flex-column align-items-start'>
+                    <h2>{title}</h2>
+                    <div className='skills-badge-container'>
+                    {languages.map(language => {
+                      return (
+                        <Badge key={projectId+language} className='skills-badge'>{language}</Badge>
+                      )
+                    })}
+                  </div>
+                </Carousel.Caption>
+                </div>
+              </Link>
+            </Carousel.Item>
+          )
+        })}
       </Carousel>
     </section>
   )
