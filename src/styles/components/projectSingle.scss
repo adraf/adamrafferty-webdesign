@@ -11,27 +11,41 @@
 }
 
 .single-project-img-section {
-  width: 60%;
+  width: 60vw;
   max-width: 500px;
   height: 100%;
+  // max-height: 550px;
   @include flex(row, center, space-around);
   flex-wrap: wrap;
+  @media (max-width:767px) {
+    width: 90%;
+    margin-bottom: 25px;
+  }
 }
 
 .single-project-img {
-  height: 14em;
-  width: 14em;
+  height: 25vw;
+  max-height: 240px;
+  width: 25vw;
+  max-width: 240px;
   margin: 5px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 3px solid $darkGreen;
+  @media (max-width:767px) {
+    height: 39vw;
+    width: 39vw;
+    margin: 2px;
+  }
 }
 
 .project-info-container {
   @include flex(column, flex-start, space-between);
   height: 100%;
-  width: 40%;
-  margin-left: 10px;
+  width: 40vw;
+  margin-left: 20px;
+  max-height: 550px;
   // max-width: 600px;
   @media (max-width:767px) {
     width: 90%;

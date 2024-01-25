@@ -18,6 +18,7 @@ $white: #EEEEEE;
   --white-to-black: #EEEEEE;
   --green-to-black: #8bbabb;
   --light-green-to-dark: #C7F0DB;
+  --light-green-to-white: #C7F0DB;
   // Change color with rgba
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(139, 186, 187)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -31,6 +32,7 @@ $white: #EEEEEE;
   --white-to-black: #232931;
   --green-to-black: #232931;
   --light-green-to-dark: #8bbabb;
+  --light-green-to-white: #EEEEEE;
   // Change color with rgba
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(35, 41, 49)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -46,6 +48,7 @@ body {
 
 a, .social-img {
   transition: 0.2s ease-in-out;
+  text-decoration: none;
 }
 
 a:hover {

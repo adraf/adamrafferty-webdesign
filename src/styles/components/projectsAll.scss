@@ -2,26 +2,52 @@
   min-height: calc(100vh - 60px);
   height: 100%;
   width: 100%;
+  @media (max-width:767px) {
+    display: none;
+  }
+}
+
+.main-projects-mobile {
+  display: none;
+  @media (max-width:767px) {
+    @include flex(column, center, space-evenly);
+    height: 100%;
+  }
+}
+
+.carousel {
+  max-height: 800px;
 }
 
 .carousel-inner {
   height: 80vh;
+  margin: 20px;
+  max-height: 800px;
+  // @media (max-width:767px) {
+  //   height: 60vh;
+  // }
 }
 
 .project-container-carousel {
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
-  min-width: 800px;
+
+  // min-width: 800px;
 }
 
 .carousel-information {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
   width: 100vw;
   height: 40%;
   background-color: var(--black-to-white-opacity);
   backdrop-filter: blur(5px);
+  // @media (max-width:767px) {
+  //   height: 60%;
+  // }
 }
 
 .carousel-caption {
@@ -42,10 +68,10 @@
 .carousel-caption .skills-badge {
   padding: 10px 15px;
   color: $black;
-  @media (max-width:767px) {
-    padding: 10px 18px;
-    font-size: 10px;
-  }
+  // @media (max-width:767px) {
+  //   padding: 10px 18px;
+  //   font-size: 10px;
+  // }
 }
 
 .carousel-indicators {
@@ -53,9 +79,51 @@
   margin-top: 5px;
 }
 
-// change arrows for dark mode
-// .carousel-control-next, .carousel-control-next-icon, .carousel-control-prev, .carousel-control-prev-icon {
-//   background-color: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill=" + var(--white-to-black) + "%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-// }
+.carousel-indicators [data-bs-target] {
+  background-color: var(--green-to-black);
+}
 
-// max-width for background image
+.carousel-control-next, .carousel-control-prev {
+  width: 8%;
+}
+
+#prevIcon, #nextIcon {
+  color: var(--light-green-to-dark);
+}
+
+
+// Mobile
+
+.main-projects-mobile .project-container-carousel {
+  @include flex(column, center, space-evenly);
+  height: 26vh;
+  width: 90vw;
+  background-size: cover;
+  background-position: top;
+  margin: 5px auto;
+  position: relative;
+}
+
+.mobile-project-sections {
+//   background-color: var(--green-to-black);
+//   margin: 15px 5px;
+  margin: 15px 0;
+}
+
+.main-projects-mobile .carousel-information {
+  position: relative;
+  width: 95vw;
+  padding: 5px;
+  margin-bottom: 5px;
+  backdrop-filter: none;
+  background-color: unset;
+}
+
+.main-projects-mobile h2 {
+  color: var(--white-to-black);
+}
+
+.main-projects-mobile .skills-badge {
+  padding: 10px 15px;
+}
+

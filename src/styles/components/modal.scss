@@ -1,0 +1,29 @@
+.modal-carousel {
+  height: 80vh;
+  padding: 0;
+  margin: 0;
+  @include flex(column, center, center);
+}
+
+.modal-header {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.modal-content {
+  align-items: center;
+  background-color: var(--black-to-white);
+}
+
+.modal-carousel .carousel-inner {
+  margin: 0;
+
+}
+
+.modal-carousel-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 71vw;
+  height: 70vh;
+}
