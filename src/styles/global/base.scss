@@ -49,7 +49,7 @@ a, .social-img {
 }
 
 a:hover {
-  color: $lightGreen;
+  color: var(--light-green-to-dark);
   transform: scale(1.05);
 }
 

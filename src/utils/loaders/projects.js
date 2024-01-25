@@ -5,17 +5,17 @@ export const projectsArray = [
     "groupType": "Solo Project",
     "time": "11 days",
     "year": "2024",
-    "description": "lorem",
+    "description": "A full stack application using a Python Django API and Django REST framework. It allows users to browse, get more information, and add favourite comic books, with access to their own editable account. This is a solo project completed in the final weeks of the Software Engineering 12 week course.",
     "readme": "https://github.com/adraf/fantasy_bazaar",
     "liveLink": "https://fantasy-bazaar-f1c5d94780c3.herokuapp.com/",
     "languages": [
       "HTML", "CSS", "JavaScript", "Python", "Django", "Sass", "Node.js", "Vite", "React", "Axios", "JSON", "JWT", "npm", "Dotenv", "Bootstrap", "Git", "GitHub", "Heroku"
     ],
     "projectImages": [
-      "src/utils/images/f-b-home-page.png", 
-      "src/utils/images/f-b-all-comics-page.png",
-      "src/utils/images/f-b-comic-ind.png",
-      "src/utils/images/f-b-mobile.png"
+      "/src/utils/images/f-b-home-page.png", 
+      "/src/utils/images/f-b-all-comics-page.png",
+      "/src/utils/images/f-b-comic-ind.png",
+      "/src/utils/images/f-b-mobile.png"
     ]
   },
   {
@@ -31,10 +31,10 @@ export const projectsArray = [
       "HTML", "CSS", "JavaScript", "MongoDB", "Express", "React", "Node.js", "Axios", "Mongoose", "Vite", "JSON", "Bcrypt", "JWT", "npm", "Dotenv", "Bootstrap", "Sass", "Heroku", "Git", "GitHub"
     ],
     "projectImages": [
-      "src/utils/images/Rentart-art-index-view.png",
-      "src/utils/images/Rentart-filter.png",
-      "src/utils/images/Rentart-ind.png",
-      "src/utils/images/Rentart-mobile.png"
+      "/src/utils/images/Rentart-art-index-view.png",
+      "/src/utils/images/Rentart-filter.png",
+      "/src/utils/images/Rentart-ind.png",
+      "/src/utils/images/Rentart-mobile.png"
     ]
   },
   {
@@ -50,10 +50,10 @@ export const projectsArray = [
       "HTML", "CSS", "JavaScript", "React", "Bootstrap", "Sass", "Vite", "Git", "GitHub", "Netlify"
     ],
     "projectImages": [
-      "src/utils/images/spam-main.png",
-      "src/utils/images/spam-search.png",
-      "src/utils/images/spam-single.png",
-      "src/utils/images/spam-mobile.png"
+      "/src/utils/images/spam-main.png",
+      "/src/utils/images/spam-search.png",
+      "/src/utils/images/spam-single.png",
+      "/src/utils/images/spam-mobile.png"
     ]
   },
   {
@@ -69,10 +69,10 @@ export const projectsArray = [
       "HTML", "CSS", "JavaScript", "Git", "GitHub"
     ],
     "projectImages": [
-      "src/utils/images/I-S-game.png",
-      "src/utils/images/I-S-main.png",
-      "src/utils/images/I-S-Game.gif",
-      "src/utils/images/I-S-side-menu.png"
+      "/src/utils/images/I-S-game.png",
+      "/src/utils/images/I-S-main.png",
+      "/src/utils/images/I-S-Game.gif",
+      "/src/utils/images/I-S-side-menu.png"
     ]
   },
   {
@@ -88,10 +88,10 @@ export const projectsArray = [
       "HTML", "CSS", "JavaScript", "Git", "GitHub"
     ],
     "projectImages": [
-      "src/utils/images/b-m-main.png", 
-      "src/utils/images/b-m-gallery.png", 
-      "src/utils/images/b-m-menu.png", 
-      "src/utils/images/b-m-mobile.png"
+      "/src/utils/images/b-m-main.png", 
+      "/src/utils/images/b-m-gallery.png", 
+      "/src/utils/images/b-m-menu.png", 
+      "/src/utils/images/b-m-mobile.png"
     ]
   },
   {
@@ -107,10 +107,10 @@ export const projectsArray = [
       "HTML", "CSS", "JavaScript", "Node.js", "React", "Parcel.js", "Git", "GitHub"
     ],
     "projectImages": [
-      "src/utils/images/w-r-3.png",
-      "src/utils/images/w-r-1.png",
-      "src/utils/images/w-r-2.png",
-      "src/utils/images/w-r-mobile.png"
+      "/src/utils/images/w-r-3.png",
+      "/src/utils/images/w-r-1.png",
+      "/src/utils/images/w-r-2.png",
+      "/src/utils/images/w-r-mobile.png"
     ]
   },
   {
@@ -126,10 +126,10 @@ export const projectsArray = [
       "HTML", "CSS", "JavaScript", "Node.js", "Parcel.js", "Git", "GitHub"
     ],
     "projectImages": [
-      "src/utils/images/ISS-main.png",
-      "src/utils/images/ISS-asteroid.png",
-      "src/utils/images/ISS-image.png",
-      "src/utils/images/ISS-mobile.png"
+      "/src/utils/images/ISS-main.png",
+      "/src/utils/images/ISS-asteroid.png",
+      "/src/utils/images/ISS-image.png",
+      "/src/utils/images/ISS-mobile.png"
     ]
   },
   {
@@ -145,7 +145,7 @@ export const projectsArray = [
       "HTML", "CSS", "JavaScript", "Node.js", "Git", "GitHub"
     ],
     "projectImages": [
-      "src/utils/images/whatAmILookingAt.jpg"
+      "/src/utils/images/whatAmILookingAt.jpg"
     ]
   },
   {
@@ -161,8 +161,8 @@ export const projectsArray = [
       "HTML", "CSS", "JavaScript", "PHP", "GitHub"
     ],
     "projectImages": [
-      "src/utils/images/danbatchimg.png",
-      "src/utils/images/danbatch-mobile.png"
+      "/src/utils/images/danbatchimg.png",
+      "/src/utils/images/danbatch-mobile.png"
     ]
   },
   {
@@ -178,7 +178,7 @@ export const projectsArray = [
       "HTML", "CSS", "JavaScript", "GitHub"
     ],
     "projectImages": [
-      "src/utils/images/naanovoimg.png"
+      "/src/utils/images/naanovoimg.png"
     ]
   },
 ]

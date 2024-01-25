@@ -4,7 +4,17 @@ import { useState } from 'react'
 
 function App() {
 
-  const [getProject, setGetProject] = useState([])
+  // localStorage.setItem('project-ID', project.id)
+  // useEffect(() => {
+  //   async function handleProjectID() {
+  //     Number(localStorage.getItem('project-ID')) !== getProject.id && setGetProject(getProject)
+
+  //     return getProject
+  //   }
+  //   handleProjectID()
+  // }, [localStorage])
+
+  const [getProject, setGetProject] = useState()
 
   return (
     <>

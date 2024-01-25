@@ -6,12 +6,12 @@ import { Badge } from 'react-bootstrap'
 
 export default function ProjectsAll() {
 
-  const [getProject, setGetProject] = useOutletContext([])
+  const [getProject, setGetProject] = useOutletContext()
 
   async function getIndProject(id) {
     projectsArray.forEach(project => {
       if (id === project.id) {
-        // console.log("this project", project)
+        localStorage.setItem('project-ID', project.id)
         setGetProject(project)
         return getProject
       }
