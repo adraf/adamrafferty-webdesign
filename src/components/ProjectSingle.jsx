@@ -1,16 +1,20 @@
 // import { useState } from 'react'
-// import { useState } from 'react'
 import { Badge } from 'react-bootstrap'
-import { useOutletContext } from 'react-router-dom'
-
-
+// import { useOutletContext } from 'react-router-dom'
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
+
+// import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel'
 
 
 export default function ProjectSingle() {
+
+  // const [getProject] = useOutletContext()
+  const localItem = localStorage.getItem('project-ID')
+  const localProjectData = JSON.parse(localItem)
+
+  const { projectImages, title, groupType, time, description, liveLink, readme, languages } = localProjectData
 
   const [lgShow, setLgShow] = useState(false);
   const prevIcon = <svg id='prevIcon' xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" className="bi bi-caret-left-fill" viewBox="0 0 16 16">
@@ -18,20 +22,14 @@ export default function ProjectSingle() {
   </svg>
   const nextIcon = <svg id='nextIcon' xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" className="bi bi-caret-right-fill" viewBox="0 0 16 16">
     <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-  </svg>
-
-
-  // Outlet Context / State
-  const [getProject] = useOutletContext()
-  
-  const { projectImages, title, groupType, time, description, liveLink, readme, languages } = getProject
+  </svg> 
 
   return (
     <section className='single-project-page'>
       <section className='single-project-img-section'>
         {projectImages.map((projectImage) => {
           return (
-            <div className='single-project-img' key={title+projectImage} style={{ backgroundImage: `url(${projectImage})` }}></div>
+            <div className='single-project-img' onClick={() => setLgShow(true)} key={title+projectImage} style={{ backgroundImage: `url(${projectImage})` }}></div>
           )
         })}
       </section>
@@ -66,12 +64,11 @@ export default function ProjectSingle() {
         </div>
       </section>
 
-      <Button onClick={() => setLgShow(true)}>Large modal</Button>
-      <Modal
-        size="lg" show={lgShow} onHide={() => setLgShow(false)} centered>
+      {/* <Button onClick={() => setLgShow(true)}>Large modal</Button> */}
+      <Modal data-bs-theme="dark" show={lgShow} onHide={() => setLgShow(false)} centered>
         <Modal.Header closeButton>{title}</Modal.Header>
         <Modal.Body>
-          <Carousel className='modal-carousel' prevIcon={prevIcon} nextIcon={nextIcon}>
+          <Carousel touch={true} wrap={true} className='modal-carousel' prevIcon={prevIcon} nextIcon={nextIcon}>
             {projectImages.map((projectImage) => {
               return (
                 <Carousel.Item key={'carousel'+title+projectImage}>

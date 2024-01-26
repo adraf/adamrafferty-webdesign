@@ -1,5 +1,19 @@
+.modal-dialog.modal-dialog-centered {
+  max-width: 90%;
+  @media (max-width:767px) {
+    max-width: 100%;
+  }
+}
+
+.modal-body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .modal-carousel {
   height: 80vh;
+  width: 100%;
   padding: 0;
   margin: 0;
   @include flex(column, center, center);
@@ -17,13 +31,23 @@
 
 .modal-carousel .carousel-inner {
   margin: 0;
-
 }
 
 .modal-carousel-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 71vw;
+  width: 80%;
+  margin: 0 auto;
   height: 70vh;
+}
+
+
+[data-bs-theme=dark] .carousel .carousel-indicators [data-bs-target], [data-bs-theme=dark].carousel .carousel-indicators [data-bs-target] {
+  background-color: var(--green-to-black);
+}
+
+[data-bs-theme=dark] .btn-close {
+  filter: none;
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238bbabb'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
 }

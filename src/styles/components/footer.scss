@@ -1,0 +1,36 @@
+footer {
+  @include flex(row, center, space-between);
+  width: 100vw;
+  margin-top: 70px;
+  padding: 20px;
+  background-color: var(--green-to-black);
+  @media (max-width:767px) {
+    @include flex(column, center, space-around);
+  }
+}
+
+.left-footer-section, .right-footer-section {
+  @include flex(row, center, space-evenly);
+  width: 20%;
+  @media (max-width:767px) {
+    width: 40%;
+    justify-content: space-around;
+    margin: 7px;
+  }
+}
+
+.left-footer-section {
+  width: 30%;
+  @media (max-width:767px) {
+    width: 90%;
+  }
+}
+
+footer .social-img, footer a {
+  color: var(--black-to-white);
+}
+
+footer .social-img:hover, footer a:hover {
+  color: var(--);
+}
+

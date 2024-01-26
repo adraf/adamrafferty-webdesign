@@ -1,4 +1,4 @@
-import { Link, useOutletContext } from 'react-router-dom'
+import { Link, useNavigate, useOutletContext } from 'react-router-dom'
 import { projectsArray } from '../utils/loaders/projects'
 
 import Carousel from 'react-bootstrap/Carousel'
@@ -7,12 +7,13 @@ import { Badge } from 'react-bootstrap'
 export default function ProjectsAll() {
 
   const [getProject, setGetProject] = useOutletContext()
-
+  const navigate = useNavigate()
   async function getIndProject(id) {
     projectsArray.forEach(project => {
       if (id === project.id) {
-        localStorage.setItem('project-ID', project.id)
+        localStorage.setItem('project-ID', JSON.stringify(project))
         setGetProject(project)
+        navigate(`/project/${id}/`)
         return getProject
       }
     })
@@ -33,7 +34,8 @@ export default function ProjectsAll() {
             const { id:projectId, title, languages, projectImages } = project
             return (
               <Carousel.Item key={projectId} className='w-100 h-100 p-3 project-container-carousel'  xl={3} md={6} style={{ backgroundImage: `url(${projectImages[0]})` }}>
-                <Link to={`/project/${projectId}/`} onClick={() => getIndProject(projectId)}>
+                <Link onClick={() => getIndProject(projectId)}>
+                {/* <Link to={`/project/${projectId}/`} onClick={() => getIndProject(projectId)}> */}
                   <div className='carousel-information'>
                     <Carousel.Caption className='d-flex flex-column align-items-start'>
                       <h2>{title}</h2>

@@ -1,5 +1,6 @@
 .about-page {
   @include flex(row, center, space-evenly);
+  min-height: calc(100vh - 60px);
   margin: 3em auto 0 auto;
   width: 90vw;
   max-width: 1000px;
@@ -11,12 +12,18 @@
 }
 
 .img-section {
-  @include flex(row, flex-start, center);
+  @include flex(column, center, flex-start);
   min-width: 25%;
   height: 100%;
   @media (max-width:767px) {
     margin: 0 0 2em 0;
   }
+}
+
+.img-section h3 {
+  color: var(--green-to-black);
+  margin-top: 20px;
+  text-align: center;
 }
 
 .profile-img-container{
