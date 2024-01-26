@@ -1,7 +1,7 @@
 footer {
   @include flex(row, center, space-between);
   width: 100vw;
-  margin-top: 70px;
+  margin-top: 30px;
   padding: 20px;
   background-color: var(--green-to-black);
   @media (max-width:767px) {
@@ -31,6 +31,7 @@ footer .social-img, footer a {
 }
 
 footer .social-img:hover, footer a:hover {
-  color: var(--);
+  color: var(--light-green-to-dark);
+  transform: scale(1.05);
 }
 

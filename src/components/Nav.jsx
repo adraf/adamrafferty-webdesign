@@ -8,7 +8,7 @@ import DarkMode from "./DarkMode";
 
 export default function NavMenu() {
   return (
-    <Navbar expand='md' className='bg-body-tertiary' id='navbar-main-page'>
+    <Navbar collapseOnSelect expand='md' className='bg-body-tertiary' id='navbar-main-page'>
       <Navbar.Brand><Link className='nav-btn-brand' to='/'>Adam Rafferty</Link></Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav'/>
       <Navbar.Collapse id='basic-navbar-nav'>
