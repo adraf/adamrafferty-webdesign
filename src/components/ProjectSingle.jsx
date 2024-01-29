@@ -15,12 +15,10 @@ export default function ProjectSingle() {
     window.scrollTo(0, 0)
   },[])
 
-  // const [getProject] = useOutletContext()
   const localItem = localStorage.getItem('project-ID')
   const localProjectData = JSON.parse(localItem)
 
-  // const linkBtn = document.getElementById('liveLinkButton')
-  // console.log(linkBtn)
+
   const { projectImages, title, groupType, year, time, description, liveLink, readme, languages } = localProjectData
 
   const [lgShow, setLgShow] = useState(false);
@@ -75,8 +73,6 @@ export default function ProjectSingle() {
           })}
         </div>
       </section>
-
-      {/* <Button onClick={() => setLgShow(true)}>Large modal</Button> */}
       <Modal data-bs-theme="dark" show={lgShow} onHide={() => setLgShow(false)} centered>
         <Modal.Header closeButton>{title}</Modal.Header>
         <Modal.Body>

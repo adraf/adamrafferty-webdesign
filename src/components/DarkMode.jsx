@@ -16,10 +16,8 @@ export default function DarkMode() {
   ]
 
   if (radioValue == 1) {
-    // document.body.classList.add('light-mode') 
     document.documentElement.setAttribute('data-theme', 'light')
     } else if (radioValue == 2) {
-    // document.body.classList.remove('light-mode') 
     document.documentElement.setAttribute('data-theme', 'dark')
     } 
   

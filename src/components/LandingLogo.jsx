@@ -3,7 +3,7 @@ import { useEffect } from "react"
 export default function LandingLogo() {
   const letterBoxes = []
   const boxStartPoints = []
-  // const [ boxStartPoints, setBoxStartPoints ] = useState([])
+
   useEffect(() => {
     async function getName() {
       const titleContainer = document.querySelector('#title')
@@ -67,7 +67,7 @@ export default function LandingLogo() {
 
   return (
     <>
-        <header id="title"></header>
+      <header id="title"></header>
     </>
   )
 }
