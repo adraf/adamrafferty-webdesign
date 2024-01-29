@@ -162,6 +162,8 @@ export const projectsArray = [
     ],
     "projectImages": [
       "/src/utils/images/danbatchimg.png",
+      "/src/utils/images/danbatch-gallery.png",
+      "/src/utils/images/danbatch-photo.gif",
       "/src/utils/images/danbatch-mobile.png"
     ]
   },
@@ -178,7 +180,10 @@ export const projectsArray = [
       "HTML", "CSS", "JavaScript", "GitHub"
     ],
     "projectImages": [
-      "/src/utils/images/naanovoimg.png"
+      "/src/utils/images/naanovoimg.png",
+      "/src/utils/images/naanovo-text.png",
+      "/src/utils/images/naanovo-mobile.png",
+      "/src/utils/images/naanovo-menu.png"
     ]
   },
 ]

@@ -67,9 +67,7 @@ export default function LandingLogo() {
 
   return (
     <>
-      {/* <main> */}
         <header id="title"></header>
-      {/* </main> */}
     </>
   )
 }

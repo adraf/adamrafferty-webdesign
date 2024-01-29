@@ -7,6 +7,8 @@ import Col from 'react-bootstrap/Col';
 import DarkMode from "./DarkMode";
 
 export default function NavMenu() {
+
+
   return (
     <Navbar collapseOnSelect expand='md' className='bg-body-tertiary' id='navbar-main-page'>
       <Navbar.Brand><Link className='nav-btn-brand' to='/'>Adam Rafferty</Link></Navbar.Brand>
@@ -20,7 +22,6 @@ export default function NavMenu() {
                 <DarkMode />
               </Col>
               <Col><Nav><Link className='nav-btn-links' to='/project'>Projects</Link></Nav></Col>
-              {/* <Col><Nav><Link className='nav-btn-links' to='/'>Work</Link></Nav></Col> */}
               <Col><Nav><Link className='nav-btn-links' to='/about'>About</Link></Nav></Col>
             </Row>
           </Container>

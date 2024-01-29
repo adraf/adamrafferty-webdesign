@@ -16,14 +16,13 @@ $white: #EEEEEE;
   // standard dark mode
   --black-to-white: #232931;
   --black-to-white-opacity: rgb(35, 41, 49, 0.5);
-  --white-to-black: #EEEEEE;
+  --white-to-black: #eeeeee;
   --green-to-black: #8bbabb;
   --black-to-green: #232931;
   --light-green-to-dark: #C7F0DB;
   --light-green-to-white: #C7F0DB;
-  // Change color with rgba
   .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(139, 186, 187)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%238bbabb' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
 }
 
@@ -36,9 +35,8 @@ $white: #EEEEEE;
   --black-to-green: #8bbabb;
   --light-green-to-dark: #8bbabb;
   --light-green-to-white: #EEEEEE;
-  // Change color with rgba
   .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(35, 41, 49)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23232931' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
 }
 
@@ -60,5 +58,5 @@ a:hover {
 }
 
 .social-img:hover {
-  color: $darkGreen;
+  color: var(--green-to-black);
 }

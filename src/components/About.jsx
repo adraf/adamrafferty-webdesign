@@ -1,5 +1,9 @@
 import Badge from 'react-bootstrap/Badge';
 
+import Nav from 'react-bootstrap/Nav';
+import Row from 'react-bootstrap/Row';
+import Tab from 'react-bootstrap/Tab';
+
 
 export default function About() {
   return (
@@ -106,6 +110,89 @@ export default function About() {
               <path fill="currentColor" d="M12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10A10 10 0 0 1 2 12A10 10 0 0 1 12 2m-2 13.33c.16.54.14 1.04 0 1.5c0 .05-.04.1-.06.17c-.02 0-.04.07-.07.12c-.11.24-.27.47-.46.67c-.58.64-1.41.88-1.74.68c-.38-.22-.17-1.12.49-1.83c.72-.76 1.76-1.26 1.76-1.26zm8.27-9.05c-.45-1.78-3.4-2.36-6.18-1.37c-1.66.59-3.46 1.51-4.75 2.72c-1.53 1.44-1.78 2.69-1.68 3.21c.34 1.84 2.88 3.05 3.92 3.94v.01c-.3.15-2.54 1.28-3.08 2.44c-.54 1.22.1 2.1.5 2.22c1.34.36 2.69-.29 3.41-1.38c.7-1.04.65-2.39.34-3.07c.42-.1.91-.15 1.53-.08c1.76.21 2.1 1.3 2.03 1.76c-.06.46-.43.71-.55.79c-.12.07-.16.1-.15.16c.01.08.07.08.17.06c.15-.03.93-.37.96-1.22c.04-1.08-.99-2.28-2.81-2.25c-.75.02-1.22.09-1.56.22l-.08-.09c-1.13-1.2-3.21-2.05-3.12-3.67c.03-.59.23-2.13 4-4.01c3.08-1.54 5.55-1.12 5.98-.17c.61 1.33-1.32 3.82-4.52 4.18c-1.22.14-1.87-.34-2.03-.51c-.17-.17-.19-.2-.25-.17c-.11.07-.04.23 0 .33c.09.25.49.67 1.15.91c.59.19 2.03.3 3.76-.37c1.94-.75 3.46-2.84 3.01-4.59" />
             </svg>
             &nbsp;<span className='skill-badge-span'>Sass</span></Badge>
+        </div>
+        <div className='interests-div'>
+
+
+          <Tab.Container>
+            <Row  id="interests-tab-container">
+              <Row>
+                <Nav>
+                  <Nav.Item>
+                    <Nav.Link eventKey="dog">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M8.35 3c1.18-.17 2.43 1.12 2.79 2.9c.36 1.77-.29 3.35-1.47 3.53c-1.17.18-2.43-1.11-2.8-2.89c-.37-1.77.3-3.35 1.48-3.54m7.15 0c1.19.19 1.85 1.77 1.5 3.54c-.38 1.78-1.63 3.07-2.81 2.89c-1.19-.18-1.84-1.76-1.47-3.53c.36-1.78 1.61-3.07 2.78-2.9M3 7.6c1.14-.49 2.69.4 3.5 1.95c.76 1.58.5 3.24-.63 3.73c-1.13.49-2.67-.39-3.46-1.96C1.62 9.75 1.9 8.08 3 7.6m18 0c1.1.48 1.38 2.15.59 3.72c-.79 1.57-2.33 2.45-3.46 1.96c-1.13-.49-1.39-2.15-.63-3.73C18.31 8 19.86 7.11 21 7.6m-1.67 10.78c.04.94-.68 1.98-1.54 2.37c-1.79.82-3.91-.88-5.9-.88c-1.99 0-4.13 1.77-5.89.88c-1-.49-1.69-1.79-1.56-2.87c.18-1.49 1.97-2.29 3.03-3.38c1.41-1.41 2.41-4.06 4.42-4.06c2 0 3.06 2.61 4.41 4.06c1.11 1.22 2.96 2.25 3.03 3.88" />
+                      </svg>
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="film">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M5.76 10H20v8H4V6.47M22 4h-4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2z" />
+                      </svg>
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="plane">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M14 8.947L22 14v2l-8-2.526v5.36l3 1.666V22l-4.5-1L8 22v-1.5l3-1.667v-5.36L3 16v-2l8-5.053V3.5a1.5 1.5 0 0 1 3 0z" />
+                      </svg>
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="lego">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19 6V5a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v1h-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v1H3v14h18V6Z" />
+                      </svg>
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="drawing">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 16 16">
+                        <path fill="currentColor" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5L13.5 4.793L14.793 3.5L12.5 1.207zm1.586 3L10.5 3.207L4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175l-.106.106l-1.528 3.821l3.821-1.528l.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                      </svg>
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link eventKey="music">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19 4.1c-.9-.8-2-1.3-3.2-1.6c-.3-.1-2.2-.5-3.6-.5h-.4c-1.4 0-3.4.4-3.7.5c-1.1.3-2.2.8-3.1 1.6C3 5.9 3 8.7 4 11c1 2.5 2.1 4.7 3.6 6.9C8.8 19.6 10.1 22 12 22c1.9 0 3.2-2.4 4.5-4.1c1.5-2.1 2.6-4.4 3.6-6.9c.9-2.3.9-5.1-1.1-6.9" />
+                      </svg>
+                    </Nav.Link>
+                  </Nav.Item>
+                </Nav>
+              </Row>
+              <Row>
+                <Tab.Content>
+                  <Tab.Pane eventKey="dog">Enjoy visiting new places in and around Devon to walk our rescue chihuahua/miniature pinscher cross, Lucky.</Tab.Pane>
+                  <Tab.Pane eventKey="film"><span className='interest-tab-title'>Film/TV nerd</span><br></br>I would happily rewatch Wayne&apos;s World, Back to the Future, the Mission Impossible&apos;s and Spaced on repeat. Big Simpsons fan.</Tab.Pane>
+                  <Tab.Pane eventKey="plane">Exploring whenever possible!<br></br>With family in the US to visit, we also make a point to discover different parts of Europe.<br></br>Our honeymoon in Hawaii has been an incredible highlight.</Tab.Pane>
+                  <Tab.Pane eventKey="lego"><span className='interest-tab-title'>Lego builder</span><br></br>I have The Office set waiting to be built when I finish this portfolio.</Tab.Pane>
+                  <Tab.Pane eventKey="drawing"><span className='interest-tab-title'>Avid doodler</span><br></br>Love design, cartoons and doodles.</Tab.Pane>
+                  <Tab.Pane eventKey="music"><span className='interest-tab-title'>Pop punk fan</span><br></br>I most recently saw Blink-182 on their reunion tour at the O2.</Tab.Pane>
+                </Tab.Content>
+              </Row>
+            </Row>
+          </Tab.Container>
+
+          {/* <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M8.35 3c1.18-.17 2.43 1.12 2.79 2.9c.36 1.77-.29 3.35-1.47 3.53c-1.17.18-2.43-1.11-2.8-2.89c-.37-1.77.3-3.35 1.48-3.54m7.15 0c1.19.19 1.85 1.77 1.5 3.54c-.38 1.78-1.63 3.07-2.81 2.89c-1.19-.18-1.84-1.76-1.47-3.53c.36-1.78 1.61-3.07 2.78-2.9M3 7.6c1.14-.49 2.69.4 3.5 1.95c.76 1.58.5 3.24-.63 3.73c-1.13.49-2.67-.39-3.46-1.96C1.62 9.75 1.9 8.08 3 7.6m18 0c1.1.48 1.38 2.15.59 3.72c-.79 1.57-2.33 2.45-3.46 1.96c-1.13-.49-1.39-2.15-.63-3.73C18.31 8 19.86 7.11 21 7.6m-1.67 10.78c.04.94-.68 1.98-1.54 2.37c-1.79.82-3.91-.88-5.9-.88c-1.99 0-4.13 1.77-5.89.88c-1-.49-1.69-1.79-1.56-2.87c.18-1.49 1.97-2.29 3.03-3.38c1.41-1.41 2.41-4.06 4.42-4.06c2 0 3.06 2.61 4.41 4.06c1.11 1.22 2.96 2.25 3.03 3.88" />
+          </svg> */}
+          {/* <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M5.76 10H20v8H4V6.47M22 4h-4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2z" />
+          </svg> */}
+          {/* <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M14 8.947L22 14v2l-8-2.526v5.36l3 1.666V22l-4.5-1L8 22v-1.5l3-1.667v-5.36L3 16v-2l8-5.053V3.5a1.5 1.5 0 0 1 3 0z" />
+          </svg> */}
+          {/* <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 6V5a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v1h-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v1H3v14h18V6Z" />
+          </svg> */}
+          {/* <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5L13.5 4.793L14.793 3.5L12.5 1.207zm1.586 3L10.5 3.207L4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175l-.106.106l-1.528 3.821l3.821-1.528l.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+          </svg> */}
+          {/* <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 4.1c-.9-.8-2-1.3-3.2-1.6c-.3-.1-2.2-.5-3.6-.5h-.4c-1.4 0-3.4.4-3.7.5c-1.1.3-2.2.8-3.1 1.6C3 5.9 3 8.7 4 11c1 2.5 2.1 4.7 3.6 6.9C8.8 19.6 10.1 22 12 22c1.9 0 3.2-2.4 4.5-4.1c1.5-2.1 2.6-4.4 3.6-6.9c.9-2.3.9-5.1-1.1-6.9" />
+          </svg> */}
         </div>
       </section>
     </section>

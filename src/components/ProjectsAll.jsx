@@ -35,7 +35,6 @@ export default function ProjectsAll() {
             return (
               <Carousel.Item key={projectId} className='w-100 h-100 p-3 project-container-carousel'  xl={3} md={6} style={{ backgroundImage: `url(${projectImages[0]})` }}>
                 <Link onClick={() => getIndProject(projectId)}>
-                {/* <Link to={`/project/${projectId}/`} onClick={() => getIndProject(projectId)}> */}
                   <div className='carousel-information'>
                     <Carousel.Caption className='d-flex flex-column align-items-start'>
                       <h2>{title}</h2>
@@ -61,19 +60,21 @@ export default function ProjectsAll() {
             <Link className='mobile-project-sections' to={`/project/${projectId}/`} onClick={() => getIndProject(projectId)} key={projectId}>
               <section  className='project-container-carousel' style={{ backgroundImage: `url(${projectImages[0]})` }}>
               </section>
-                <div className='carousel-information'>
-                  <div className='d-flex flex-column align-items-start'>
+              <div className='carousel-information'>
+                <div className='d-flex flex-column align-items-start'>
+                  <div className='projectsAll-mobile-title-section'>
                     <h2>{title}</h2>
-                    <div className='skills-badge-container'>
-                      {languages.map(language => {
-                        return (
-                          <Badge key={projectId+language} className='skills-badge'>{language}</Badge>
-                        )
-                      })}
-                    </div>
+                    <Badge className='skills-badge' id='more-info-badge'>More information</Badge>
+                  </div>
+                  <div className='skills-badge-container'>
+                    {languages.map(language => {
+                      return (
+                        <Badge key={projectId+language} className='skills-badge'>{language}</Badge>
+                      )
+                    })}
                   </div>
                 </div>
-        
+              </div>
             </Link>
           )
         })}
