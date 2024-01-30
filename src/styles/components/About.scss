@@ -26,12 +26,10 @@
 }
 
 .profile-img-container{
+  @include bg-image(center, cover);
   background-image: url('/src/utils/images/profile_img.jpg');
   height: 15em;
   width: 15em;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .about-info-container {
@@ -86,9 +84,6 @@
   @include flex(row, center, space-between);
   margin: 2em 0 1em 0 ;
   width: 100%;
-  // @media (max-width:767px) {
-
-  // }
 }
 
 #interests-tab-container {

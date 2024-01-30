@@ -34,9 +34,7 @@
 }
 
 .modal-carousel-img {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  @include bg-image(center, contain);
   width: 80%;
   margin: 0 auto;
   height: 70vh;

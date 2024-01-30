@@ -11,7 +11,7 @@ footer {
 
 .left-footer-section, .right-footer-section {
   @include flex(row, center, space-evenly);
-  width: 20%;
+  width: 25%;
   @media (max-width:767px) {
     width: 40%;
     justify-content: space-around;

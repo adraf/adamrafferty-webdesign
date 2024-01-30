@@ -20,15 +20,15 @@
 }
 
 .carousel-inner {
+  display: flex;
   height: 80vh;
-  margin: 20px;
+  margin: 20px auto;
   max-height: 800px;
+  max-width: 89vw;
 }
 
 .project-container-carousel {
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
+  @include bg-image(center, contain);
 }
 
 .carousel-information {
@@ -41,10 +41,13 @@
   background-color: var(--black-to-white-opacity);
   backdrop-filter: blur(5px);
   transition: 0.175s ease-in-out;
+  @media (max-width:940px) and (orientation:landscape) {
+    max-height: 256px;
+    height: 60%;
+  }
 }
 
 .carousel-information:hover {
-  // opacity: calc(0.8);
   transform: scale(1.02);
   background-color: var(--black-to-white);
   backdrop-filter: blur(50px);
@@ -88,14 +91,12 @@
   color: var(--light-green-to-dark);
 }
 
-
 // Mobile
 .main-projects-mobile .project-container-carousel {
   @include flex(column, center, space-evenly);
+  @include bg-image(top, cover);
   height: 26vh;
   width: 90vw;
-  background-size: cover;
-  background-position: top;
   margin: 5px auto;
   position: relative;
 }

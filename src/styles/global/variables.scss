@@ -13,3 +13,9 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin bg-image($position, $size) {
+  background-position: $position;
+  background-size: $size;
+  background-repeat: no-repeat;
+}

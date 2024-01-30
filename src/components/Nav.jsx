@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,10 +8,15 @@ import DarkMode from "./DarkMode";
 
 export default function NavMenu() {
 
+  const location = useLocation()
 
   return (
     <Navbar collapseOnSelect expand='md' className='bg-body-tertiary' id='navbar-main-page'>
-      <Navbar.Brand><Link className='nav-btn-brand' to='/'>Adam Rafferty</Link></Navbar.Brand>
+      {location.pathname === '/' ?
+        <Navbar.Brand><Link className='nav-btn-brand' to='/'>Web Developer</Link></Navbar.Brand>
+        :
+        <Navbar.Brand><Link className='nav-btn-brand' to='/'>Adam Rafferty</Link></Navbar.Brand>
+      }
       <Navbar.Toggle aria-controls='basic-navbar-nav'/>
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='ms-auto' id='dropdown-nav'>
