@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 // Styles
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './styles/main.scss'
+import '../src/styles/main.scss'
 
 //Page Components
 import App from './App.jsx'
