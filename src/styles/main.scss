@@ -1,9 +1,9 @@
 @import './global/variables.scss';
 @import './global/base.scss';
-@import './components/LandingLogo.scss';
-@import './components/NavMenu.scss';
-@import './components/About.scss';
-@import './components/ProjectsAll.scss';
-@import './components/ProjectSingle.scss';
-@import './components/Modal.scss';
-@import './components/Footer.scss';
+@import '/src/styles/components/LandingLogo.scss';
+@import '/src/styles/components/NavMenu.scss';
+@import '/src/styles/components/About.scss';
+@import '/src/styles/components/ProjectsAll.scss';
+@import '/src/styles/components/ProjectSingle.scss';
+@import '/src/styles/components/Modal.scss';
+@import '/src/styles/components/Footer.scss';
