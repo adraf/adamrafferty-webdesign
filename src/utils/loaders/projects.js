@@ -12,10 +12,10 @@ export const projectsArray = [
       'HTML', 'CSS', 'JavaScript', 'Python', 'Django', 'Sass', 'Node.js', 'Vite', 'React', 'Axios', 'JSON', 'JWT', 'npm', 'Dotenv', 'Bootstrap', 'Git', 'GitHub', 'Heroku'
     ],
     'projectImages': [
-      '/src/assets/images/f-b-home-page.png', 
-      '/src/assets/images/f-b-all-comics-page.png',
-      '/src/assets/images/f-b-comic-ind.png',
-      '/src/assets/images/f-b-mobile.png'
+      '/images/f-b-home-page.png', 
+      '/images/f-b-all-comics-page.png',
+      '/images/f-b-comic-ind.png',
+      '/images/f-b-mobile.png'
     ]
   },
   {
@@ -31,10 +31,10 @@ export const projectsArray = [
       'HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node.js', 'Axios', 'Mongoose', 'Vite', 'JSON', 'Bcrypt', 'JWT', 'npm', 'Dotenv', 'Bootstrap', 'Sass', 'Heroku', 'Git', 'GitHub'
     ],
     'projectImages': [
-      '/src/assets/images/Rentart-art-index-view.png',
-      '/src/assets/images/Rentart-filter.png',
-      '/src/assets/images/Rentart-ind.png',
-      '/src/assets/images/Rentart-mobile.png'
+      '/images/Rentart-art-index-view.png',
+      '/images/Rentart-filter.png',
+      '/images/Rentart-ind.png',
+      '/images/Rentart-mobile.png'
     ]
   },
   {
@@ -50,10 +50,10 @@ export const projectsArray = [
       'HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap', 'Sass', 'Vite', 'Git', 'GitHub', 'Netlify'
     ],
     'projectImages': [
-      '/src/assets/images/spam-main.png',
-      '/src/assets/images/spam-search.png',
-      '/src/assets/images/spam-single.png',
-      '/src/assets/images/spam-mobile.png'
+      '/images/spam-main.png',
+      '/images/spam-search.png',
+      '/images/spam-single.png',
+      '/images/spam-mobile.png'
     ]
   },
   {
@@ -69,10 +69,10 @@ export const projectsArray = [
       'HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'
     ],
     'projectImages': [
-      '/src/assets/images/I-S-game.png',
-      '/src/assets/images/I-S-main.png',
-      '/src/assets/images/I-S-Game.gif',
-      '/src/assets/images/I-S-side-menu.png'
+      '/images/I-S-game.png',
+      '/images/I-S-main.png',
+      '/images/I-S-Game.gif',
+      '/images/I-S-side-menu.png'
     ]
   },
   {
@@ -88,10 +88,10 @@ export const projectsArray = [
       'HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'
     ],
     'projectImages': [
-      '/src/assets/images/b-m-main.png', 
-      '/src/assets/images/b-m-gallery.png', 
-      '/src/assets/images/b-m-menu.png', 
-      '/src/assets/images/b-m-mobile.png'
+      '/images/b-m-main.png', 
+      '/images/b-m-gallery.png', 
+      '/images/b-m-menu.png', 
+      '/images/b-m-mobile.png'
     ]
   },
   {
@@ -107,10 +107,10 @@ export const projectsArray = [
       'HTML', 'CSS', 'JavaScript', 'Node.js', 'React', 'Parcel.js', 'Git', 'GitHub'
     ],
     'projectImages': [
-      '/src/assets/images/w-r-3.png',
-      '/src/assets/images/w-r-1.png',
-      '/src/assets/images/w-r-2.png',
-      '/src/assets/images/w-r-mobile.png'
+      '/images/w-r-3.png',
+      '/images/w-r-1.png',
+      '/images/w-r-2.png',
+      '/images/w-r-mobile.png'
     ]
   },
   {
@@ -126,10 +126,10 @@ export const projectsArray = [
       'HTML', 'CSS', 'JavaScript', 'Node.js', 'Parcel.js', 'Git', 'GitHub'
     ],
     'projectImages': [
-      '/src/assets/images/ISS-main.png',
-      '/src/assets/images/ISS-asteroid.png',
-      '/src/assets/images/ISS-image.png',
-      '/src/assets/images/ISS-mobile.png'
+      '/images/ISS-main.png',
+      '/images/ISS-asteroid.png',
+      '/images/ISS-image.png',
+      '/images/ISS-mobile.png'
     ]
   },
   {
@@ -145,7 +145,7 @@ export const projectsArray = [
       'HTML', 'CSS', 'JavaScript', 'Node.js', 'Git', 'GitHub'
     ],
     'projectImages': [
-      '/src/assets/images/whatAmILookingAt.jpg'
+      '/images/whatAmILookingAt.jpg'
     ]
   },
   {
@@ -161,10 +161,10 @@ export const projectsArray = [
       'HTML', 'CSS', 'JavaScript', 'PHP', 'GitHub'
     ],
     'projectImages': [
-      '/src/assets/images/danbatchimg.png',
-      '/src/assets/images/danbatch-gallery.png',
-      '/src/assets/images/danbatch-photo.gif',
-      '/src/assets/images/danbatch-mobile.png'
+      '/images/danbatchimg.png',
+      '/images/danbatch-gallery.png',
+      '/images/danbatch-photo.gif',
+      '/images/danbatch-mobile.png'
     ]
   },
   {
@@ -180,10 +180,10 @@ export const projectsArray = [
       'HTML', 'CSS', 'JavaScript', 'GitHub'
     ],
     'projectImages': [
-      '/src/assets/images/naanovoimg.png',
-      '/src/assets/images/naanovo-text.png',
-      '/src/assets/images/naanovo-mobile.png',
-      '/src/assets/images/naanovo-menu.png'
+      '/images/naanovoimg.png',
+      '/images/naanovo-text.png',
+      '/images/naanovo-mobile.png',
+      '/images/naanovo-menu.png'
     ]
   },
 ]

@@ -27,7 +27,7 @@
 
 .profile-img-container{
   @include bg-image(center, cover);
-  background-image: url('/src/assets/images/profile_img.jpg');
+  background-image: url('/images/profile_img.jpg');
   height: 15em;
   width: 15em;
 }
