@@ -12,7 +12,7 @@ export const projectsArray = [
       "HTML", "CSS", "JavaScript", "Python", "Django", "Sass", "Node.js", "Vite", "React", "Axios", "JSON", "JWT", "npm", "Dotenv", "Bootstrap", "Git", "GitHub", "Heroku"
     ],
     "projectImages": [
-      "/src/utils/images/f-b-home-page.png", 
+      "images/f-b-home-page.png", 
       "/src/utils/images/f-b-all-comics-page.png",
       "/src/utils/images/f-b-comic-ind.png",
       "/src/utils/images/f-b-mobile.png"
