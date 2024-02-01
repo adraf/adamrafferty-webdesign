@@ -9,7 +9,7 @@ export const projectsArray = [
     'readme': 'https://github.com/adraf/fantasy_bazaar',
     'liveLink': 'https://fantasy-bazaar-f1c5d94780c3.herokuapp.com/',
     'languages': [
-      'HTML', 'CSS', 'JavaScript', 'Python', 'Django', 'Sass', 'Node.js', 'Vite', 'React', 'Axios', 'JSON', 'JWT', 'npm', 'Dotenv', 'Bootstrap', 'Git', 'GitHub', 'Heroku'
+      'HTML', 'CSS', 'JavaScript', 'Python', 'Django', 'Django REST framework', 'PostgreSQL', 'Sass', 'Node.js', 'Vite', 'React', 'Axios', 'JSON', 'JWT', 'npm', 'Dotenv', 'Bootstrap', 'Git', 'GitHub', 'Heroku'
     ],
     'projectImages': [
       '/images/f-b-home-page.png', 
