@@ -15,11 +15,26 @@ export default function ProjectSingle() {
     window.scrollTo(0, 0)
   },[])
 
-  const localItem = localStorage.getItem('project-ID')
-  const localProjectData = JSON.parse(localItem)
+  // OG
+  // const localItem = localStorage.getItem('project-ID')
+  // const localProjectData = JSON.parse(localItem)
+
+  // eslint-disable-next-line no-unused-vars
+  const [projectInformation, setProjectInformation] = useState(getInitialProjectData())
+
+  function getInitialProjectData() {
+    const localItem = localStorage.getItem('project-ID')
+    const localProjectData = JSON.parse(localItem)
+    return localProjectData
+  }
+
+  useEffect(() => {
+    const localItem = JSON.stringify(projectInformation)
+    localStorage.setItem('project-ID', localItem)
+  }, [projectInformation])
 
 
-  const { projectImages, title, groupType, year, time, description, liveLink, readme, languages } = localProjectData
+  const { projectImages, title, groupType, year, time, description, liveLink, readme, languages } = projectInformation
 
   const [lgShow, setLgShow] = useState(false);
   const prevIcon = <svg id='prevIcon' xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" className="bi bi-caret-left-fill" viewBox="0 0 16 16">

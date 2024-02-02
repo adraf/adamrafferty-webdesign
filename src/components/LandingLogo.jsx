@@ -18,7 +18,7 @@ export default function LandingLogo() {
       startPoint()
     }
     getName()
-  }, []) 
+  }) 
 
   async function startPoint() {
 
