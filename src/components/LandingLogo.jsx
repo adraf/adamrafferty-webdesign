@@ -33,7 +33,7 @@ export default function LandingLogo() {
       box.addEventListener('mouseover', assignOGPoint)
     })
   }
-  startPoint()
+  // startPoint()
 
 
   function releaseLetters() {
