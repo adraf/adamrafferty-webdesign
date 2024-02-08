@@ -119,6 +119,7 @@ export default function About() {
             &nbsp;<span className='skill-badge-span'>Sass</span></Badge>
         </div>
         <div className='interests-div'>
+          <h4>Interests</h4>
           <Tab.Container>
             <Row  id="interests-tab-container">
               <Row>

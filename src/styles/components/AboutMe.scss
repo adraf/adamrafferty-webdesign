@@ -81,7 +81,8 @@
 }
 
 .interests-div {
-  @include flex(row, center, space-between);
+  display: flex;
+  flex-direction: column;
   margin: 2em 0 1em 0 ;
   width: 100%;
 }
@@ -89,7 +90,7 @@
 #interests-tab-container {
   @include flex(row, center, space-between);
   width: 100%;
-  margin: 0;
+  margin: 12px 0 0 0;
 }
 
 #interests-tab-container .nav {
@@ -117,3 +118,4 @@
 #interests-tab-container a:hover {
   color: var(--green-to-black);
 }
+
