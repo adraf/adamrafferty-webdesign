@@ -124,12 +124,22 @@
   margin: 5px 7px 5px 0;
 }
 
-.projectsAll-mobile-title-section {
+.projectsAll-mobile-title-section, .projectsAll-desktop-title-section {
   @include flex(row, center, space-between);
   width: 100%;
   margin-top: 5px;
 }
 
-#more-info-badge {
+#more-info-badge-mobile, #more-info-badge-desktop {
   color: var(--white-to-black);
+}
+
+#more-info-badge-desktop {
+  margin-top: 0;
+  padding: 10px 40px;
+  font-size: 0.8em;
+}
+
+#more-info-badge-desktop:hover {
+  color: var(--black-to-white);
 }

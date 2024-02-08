@@ -37,7 +37,11 @@ export default function ProjectsAll() {
                 <Link onClick={() => getIndProject(projectId)}>
                   <div className='carousel-information'>
                     <Carousel.Caption className='d-flex flex-column align-items-start'>
-                      <h2>{title}</h2>
+                      {/* <h2>{title}</h2> */}
+                      <div className='projectsAll-desktop-title-section'>
+                        <h2>{title}</h2>
+                        <Badge className='skills-badge' id='more-info-badge-desktop'>More information</Badge>
+                      </div>
                       <div className='skills-badge-container'>
                       {languages.map(language => {
                         return (
@@ -64,7 +68,7 @@ export default function ProjectsAll() {
                 <div className='d-flex flex-column align-items-start'>
                   <div className='projectsAll-mobile-title-section'>
                     <h2>{title}</h2>
-                    <Badge className='skills-badge' id='more-info-badge'>More information</Badge>
+                    <Badge className='skills-badge' id='more-info-badge-mobile'>More information</Badge>
                   </div>
                   <div className='skills-badge-container'>
                     {languages.map(language => {
