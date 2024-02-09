@@ -1,9 +1,5 @@
-// import { useState } from 'react'
 import { Badge } from 'react-bootstrap'
-// import { useOutletContext } from 'react-router-dom'
 import { useEffect, useState } from 'react';
-
-// import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel'
 
@@ -14,10 +10,6 @@ export default function ProjectSingle() {
     // stops page loading in halfway down the page, returns user to top. 
     window.scrollTo(0, 0)
   },[])
-
-  // OG
-  // const localItem = localStorage.getItem('project-ID')
-  // const localProjectData = JSON.parse(localItem)
 
   // eslint-disable-next-line no-unused-vars
   const [projectInformation, setProjectInformation] = useState(getInitialProjectData())
@@ -102,11 +94,6 @@ export default function ProjectSingle() {
           </Carousel>
         </Modal.Body>
       </Modal>
-
-
-
-
-
     </section>
   )
 }
