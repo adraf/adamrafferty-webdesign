@@ -19,22 +19,27 @@ export default function LandingLogo() {
 
     startPoint()
 
-    const releaseTimer = setTimeout(releaseLetters, 3 * 1000)
+    const releaseTimer = setTimeout(releaseLetters, 1 * 1000)
     return () => clearTimeout(releaseTimer)
   }, [])
 
 
   function startPoint() {
-    letterBoxes.current.forEach(box => {
-      // * takes the offset value and turn it into a percentage
-      // * % = small number divided  by large number * 100
-      // * (offset position / window size) * 100
-      const top = ((box.offsetTop / window.innerHeight) * 100) + '%'
-      const left = ((box.offsetLeft / window.innerWidth) * 100) + '%'
+    // * takes the offset value and turn it into a percentage
+    // * % = small number divided  by large number * 100
+    // * (offset position / window size) * 100
+    // * First pass: measure all positions while letters are still in normal flow
+    const measurements = letterBoxes.current.map(box => ({
+      top: ((box.offsetTop / window.innerHeight) * 100) + '%',
+      left: ((box.offsetLeft / window.innerWidth) * 100) + '%'
+    }))
+
+    // * Second pass: apply positions now all measurements are done
+    letterBoxes.current.forEach((box, i) => {
       box.style.position = 'absolute'
-      box.style.top = top
-      box.style.left = left
-      boxStartPoints.current.push({ top, left })
+      box.style.top = measurements[i].top
+      box.style.left = measurements[i].left
+      boxStartPoints.current.push(measurements[i])
       // * starts process again
       box.addEventListener('mouseover', assignOGPoint)
     })
@@ -68,7 +73,7 @@ export default function LandingLogo() {
         letterBoxes.current[i].style.transform = 'rotate(0deg)'
       }
     })
-    setTimeout(releaseLetters, 15 * 1000)
+    setTimeout(releaseLetters, 2.5 * 1000)
   }
 
   return (

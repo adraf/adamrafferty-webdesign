@@ -110,7 +110,7 @@ There are two projects where the live link is no longer accessible due to change
 }
 ```
 
-I was unable to work with the React Bootstrap Navbar to fix a close issue in mobile view (added to Bugs below). I added in the dates to the projects to give a better idea on timeline, added a tab menu to the About Me page, and made the carousel and mobile view of All Projects more obvious so that users know they can see more information with a click. 
+I was unable to work with the React Bootstrap Navbar to fix a close issue in mobile view at the time (later resolved, see Revisiting Bugs). I added in the dates to the projects to give a better idea on timeline, added a tab menu to the About Me page, and made the carousel and mobile view of All Projects more obvious so that users know they can see more information with a click. 
 
 There were also ternary operators for the Navbar and the Footer. These used the React Router Dom hook `useLocation()` to determine when the user was on the landing page. When the user is, then the Navbar brand changes from my name to say ‘Web Developer’ as my name is already in the large animation. The footer also doesn’t appear on the landing page with a similar ternary.
 
@@ -294,16 +294,49 @@ function assignOGPoint() {
 The wireframing I did for this project set me up to go into my project 4 of the Software Engineering course with a good process, which was key. It meant I set time aside to focus on how things were going to look, work and flow for the user. It also meant I could plan ahead of time how I was going to set sections of the site up so they would be easier to style to go from desktop to mobile. Making sure I had ideas even for the colour scheme and font meant that I didn’t have to think about any of this mid project and then not put enough thought into it.
 
 
-## Bugs
+## Revisiting Bugs - March 2026
 
 #### React Bootstrap Navbar
-The React Bootstrap Navbar doesn’t close on clicking a link or elsewhere on the page, only when you click on its Toggle button. I have researched through Bootstrap documentation, Stack Overflow, and various other sites and tried different fixes but can’t get it to work with a Bootstrap solution so far. I wanted to use a Bootstrap solution as when I created a workaround to close on click, it overrode the inbuilt animation for menu close, and snapped shut which wasn't as pleasing a user experience.
+
+The solution was to control the expanded state manually with `useState` rather than relying on Bootstrap to handle it. Passing `expanded` to the `Navbar` component and toggling it on the `Navbar.Toggle` click meant Bootstrap's own animation still runs, and adding `onClick={() => setExpanded(false)}` to each nav link closes it cleanly when a user navigates.
+
+#### Landing Page Animation
+
+After revisiting the animation there were a few bugs that had crept in, mainly noticeable on mobile, that needed addressing.
+
+**Letters flashing to the top-left before animating**
+
+`position: absolute` was only being applied inside `releaseLetters()`, so until that fired the browser had no valid starting position and defaulted to `0, 0`. Moving it into `startPoint()` fixed this, but measuring and applying in the same loop caused the letters to bunch up - each letter made absolute shifted the layout before the next one was measured. The solution was two passes: first map over all letters and record their positions while still in normal flow, then apply `position: absolute` and the saved values once all measurements are done. There was also a missing dependency array on `useEffect` causing it to re-run on every render and duplicate the letters, and `letterBoxes` and `boxStartPoints` moved into `useRef` to persist correctly across renders.
+
+**Letter colours fading when switching light/dark mode**
+
+The transition strings had no CSS property specified, defaulting to `transition: all` and causing `color` to transition alongside the animation properties. Scoping them explicitly to `top`, `left`, and `transform` made colour changes instant again.
+
+```javascript
+box.style.transition = 'top 10s cubic-bezier(0.45, 0.13, 0.38, 0.41), left 10s cubic-bezier(0.45, 0.13, 0.38, 0.41), transform 10s cubic-bezier(0.45, 0.13, 0.38, 0.41)'
+```
+
+**Letters snapping to a horizontal line before returning to position**
+
+On mobile all saved `top` values were identical as the letters shared the same `offsetTop` in normal flow, so they all converged on one horizontal line when returning. The two-pass fix above resolved the root cause. The remaining issue was the transition and position change being applied in the same frame, so `requestAnimationFrame` was used to let the transition register before the positions updated. There was also a `setTimeout` inside the for loop in `assignOGPoint()` that was firing 13 times - once per letter - which was moved outside the loop.
+
+```javascript
+function assignOGPoint() {
+  for (let i = 0; i < letterBoxes.current.length; i++) {
+    letterBoxes.current[i].style.transition = 'top 2s cubic-bezier(0.28, 0.08, 0.81, -0.11), left 2s cubic-bezier(0.28, 0.08, 0.81, -0.11), transform 2s cubic-bezier(0.28, 0.08, 0.81, -0.11)'
+  }
+  requestAnimationFrame(() => {
+    for (let i = 0; i < letterBoxes.current.length; i++) {
+      letterBoxes.current[i].style.top = boxStartPoints.current[i].top
+      letterBoxes.current[i].style.left = boxStartPoints.current[i].left
+      letterBoxes.current[i].style.transform = 'rotate(0deg)'
+    }
+  })
+  setTimeout(releaseLetters, 2.5 * 1000)
+}
+```
 
 
 ## Future Improvements
 
 * Add in client quotes from projects I have completed.
-* Navbar mobile view to close when a link is clicked, or a user clicks elsewhere on the page.
-
-
-
