@@ -272,7 +272,7 @@ function releaseLetters() {
 setTimeout(releaseLetters, 3 * 1000)
 ```
 
-The issue was then getting them back to their original starting points if the user interacted with any of them. But we had these starting points in an array so we assigned these values back to each letter, and made sure that the letters rotated back to 0 degrees.
+The issue was then getting them back to their original starting points if the user interacted with any of them. But I had these starting points in an array so I assigned these values back to each letter, and made sure that the letters rotated back to 0 degrees.
 
 ```javascript
 function assignOGPoint() {
