@@ -7,9 +7,9 @@ export const projectsArray = [
     'year': '2024',
     'description': 'A full stack application using a Python Django API and Django REST framework. It allows users to browse, get more information, and add favourite comic books, with access to their own editable account. This is a solo project completed in the final weeks of the Software Engineering 12 week course.',
     'readme': 'https://github.com/adraf/fantasy_bazaar',
-    'liveLink': 'https://fantasy-bazaar-f1c5d94780c3.herokuapp.com/',
+    'liveLink': 'https://fantasy-bazaar.up.railway.app/',
     'languages': [
-      'HTML', 'CSS', 'JavaScript', 'Python', 'Django', 'Django REST framework', 'PostgreSQL', 'Sass', 'Node.js', 'Vite', 'React', 'Axios', 'JSON', 'JWT', 'npm', 'Dotenv', 'Bootstrap', 'Git', 'GitHub', 'Heroku'
+      'HTML', 'CSS', 'JavaScript', 'Python', 'Django', 'Django REST framework', 'PostgreSQL', 'Sass', 'Node.js', 'Vite', 'React', 'Axios', 'JSON', 'JWT', 'npm', 'Dotenv', 'Bootstrap', 'Git', 'GitHub', 'Heroku', 'Railway'
     ],
     'projectImages': [
       '/images/f-b-home-page.png', 
