@@ -1,5 +1,43 @@
 export const projectsArray = [
   {
+    'id': 12,
+    'title': 'VID // SPLIT',
+    'groupType': 'Solo Project',
+    'time': '',
+    'year': '2026',
+    'description': 'A browser-based video splitting tool that processes files entirely client-side using FFmpeg WebAssembly, with no upload or server required. Users choose from platform presets (TikTok, Instagram Reels, WhatsApp and others) or set a custom chunk length, with output clips available for individual or bulk download.',
+    'readme': 'https://github.com/adraf/vid-split',
+    'liveLink': 'https://vid-split-nine.vercel.app/',
+    'languages': [
+      'Vue 3', 'Vite', 'PrimeVue 4', 'FFmpeg WebAssembly', 'Vercel'
+    ],
+    'projectImages': [
+      '/images/vidsplit_01.png', 
+      '/images/vidsplit_02.png',
+      '/images/vidsplit_03.png',
+      '/images/vidsplit_04.png'
+    ]
+  },
+  {
+    'id': 11,
+    'title': 'SafePaws UK',
+    'groupType': 'Solo Project',
+    'time': '',
+    'year': '2026',
+    'description': 'A full-stack app for finding secure dog parks across the UK. Built a FastAPI/Python backend with paginated, filterable endpoints and a Google Places scraping pipeline for data sourcing. Frontend features map and list views, full-text search, feature filtering by county, and favourites persisted in local storage.',
+    'readme': 'https://github.com/adraf/dogpark-api',
+    'liveLink': 'https://dogpark-api.vercel.app/',
+    'languages': [
+      'Vue 3', 'Vite', 'Pinia', 'PrimeVue', 'Leaflet', 'FastAPI', 'MongoDB Atlas', 'Google Places API', 'Vercel'
+    ],
+    'projectImages': [
+      '/images/safepaws_1.png', 
+      '/images/safepaws_2.png',
+      '/images/safepaws_3.png',
+      '/images/safepaws_4.png'
+    ]
+  },
+  {
     'id': 10,
     'title': 'Fantasy Bazaar',
     'groupType': 'Solo Project',
